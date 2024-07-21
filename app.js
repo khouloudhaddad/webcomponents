@@ -7,5 +7,7 @@ customElements.define('date-picker', Datepicker, {extends: 'input'})
 customElements.define('custom-button', CustomButton);
 
 document.querySelector('#add').addEventListener('click', ()=>{
-    document.body.appendChild(new Datepicker())
+    const template = document.querySelector('#repeater');
+    const templateContent = template.content
+    document.querySelector('#app').appendChild(templateContent.cloneNode(true))
 })

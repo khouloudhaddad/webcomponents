@@ -15,7 +15,9 @@ export default class CustomButton extends HTMLElement {
                 color: #fff;
             }
         </style>
-        <button><slot/></button>
+        <slot name="outbutton"></slot>
+        
+        <button><slot  name="inbutton" /></button>
         `
     }
 }
