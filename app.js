@@ -16,3 +16,7 @@ class SecongTimer extends HTMLElement{
 }
 
 customElements.define('second-timer', SecongTimer);
+
+document.querySelector('#add').addEventListener('click', ()=>{
+    document.querySelector('second-timer').remove()
+})
