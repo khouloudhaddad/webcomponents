@@ -1,7 +1,8 @@
 export default class CustomButton extends HTMLElement {
     constructor() {
         super()
-        this.innerHTML = `
+        this.shadow = this.attachShadow({mode:'open'})
+        this.shadow.innerHTML = `
         <style>
             button{
                 border: none;
